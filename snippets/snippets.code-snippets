@@ -1,0 +1,67 @@
+{
+    "Echo CMD": {
+        "prefix": "echo",
+        "body": "echo ${1:text}",
+        "description": "Prints text to the output console\n"
+    },
+    "Echo SET": {
+        "prefix": "@echo",
+        "body": "@echo ${1:(on/off)}",
+        "description": "Sets the console to either display commands or not display commands\n\nExample: \n@echo off\necho Test\n\nOutput: Test\n\n@echo on\necho Test\n\nOutput: echo Test\nTest\n"
+    },
+    "Version CMD": {
+        "prefix": "ver",
+        "body": "ver",
+        "description": "Prints the current version of the cmd prompt terminal to the output console"
+    },
+    "Change Directory CMD": {
+        "prefix": "cd",
+        "body": "cd ${1:directory}",
+        "description": "Changes the target directory the console is running in"
+    },
+    "Clear Screen CMD": {
+        "prefix": "cls",
+        "body": "cls",
+        "description": "Clears the output console"
+    },
+    "Copy CMD": {
+        "prefix": "copy",
+        "body": "copy ${1:target} ${2:destination}",
+        "description": "Copies the target file or directory to the target directory"
+    },
+    "Delete CMD": {
+        "prefix": "del",
+        "body": "del ${1:targetdirectory}",
+        "description": "Deletes a target file or directory"
+    },
+    "Directory CMD": {
+        "prefix": "dir",
+        "body": "dir",
+        "description": "Lists all files and directories in the current directory"
+    },
+    "Exit CMD": {
+        "prefix": "exit",
+        "body": "exit",
+        "description": "Closes the open console"
+    },
+    "Make Directory CMD": {
+        "prefix": ["md", "mkdir"],
+        "body": "mkdir ${1:newdirectory}",
+        "description": "Creates a new directory inside the current directory"
+    },
+    "Pause CMD": {
+        "prefix": "pause",
+        "body": "pause",
+        "description": "Stops the command execution until the user presses any key"
+    },
+    "Remove Directory CMD": {
+        "prefix": ["rmdir", "rd"],
+        "body": "rmdir ${1:targetdirectory}",
+        "description": "Deletes the target directory"
+    },
+    "Rename CMD": {
+        "prefix": ["rename", "ren"],
+        "body": "ren ${1:old-target-file/directory-name} ${2:new-target-file/directory-name}",
+        "description": "Renames target file or directory"
+    }
+}

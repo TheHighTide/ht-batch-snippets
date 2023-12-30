@@ -1,0 +1,21 @@
+{
+  "name": "ht-batch-snippets",
+  "displayName": "HighTide's Batch Snippets",
+  "description": "Adds snippets to help speed up the development of batch scripts",
+  "version": "0.0.1",
+  "publisher": "TheHighTide",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "bat",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
