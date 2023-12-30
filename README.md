@@ -1,2 +1,6 @@
-# ht-batch-snippets
-Adds snippets to help speed up the development of batch scripts
+#HighTide's Batch Snippets
+## Features
+All features are just snippets for the batch (bat) language support
+
+## Requirements
+Batch language support installed
